@@ -3,61 +3,163 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Project</title>
-  <meta name="description" content="A brief description of your project." />
+  <title>Zhikui Zhang — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Zhikui Zhang, robotics and embedded systems engineer." />
   <link rel="icon" href="img/favicon.ico" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <h1>Your Project Name</h1>
-    <p class="subtitle">A short, impactful tagline about your project.</p>
+    <h1>Zhikui Zhang</h1>
+    <p class="subtitle">Robotics &amp; Embedded Systems</p>
+    <p class="contact-info">
+      kuizzcqu@163.com &middot; 18218819751 &middot;
+      <a href="https://github.com/zzzkite" target="_blank">GitHub</a>
+    </p>
   </header>
 
   <main>
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        Describe what this project is, what problem it solves, and why it
-        matters. Keep it concise and compelling.
-      </p>
+    <section id="education">
+      <h2>Education</h2>
+      <div class="edu-item">
+        <div class="edu-header">
+          <strong>The Chinese University of Hong Kong (Shenzhen)</strong>
+          <span class="edu-date">2025 – 2027</span>
+        </div>
+        <p>MSc in Artificial Intelligence &amp; Robotics &middot; GPA 3.40/4.00</p>
+      </div>
+      <div class="edu-item">
+        <div class="edu-header">
+          <strong>Chongqing University</strong>
+          <span class="edu-date">2021 – 2025</span>
+        </div>
+        <p>BEng in Robotics Engineering (Honors Class) &middot; GPA 3.64/4.00</p>
+        <p>CET-4/6 &middot; IELTS 6.5</p>
+      </div>
     </section>
 
-    <section id="features">
-      <h2>Features</h2>
-      <ul>
-        <li>Key feature one</li>
-        <li>Key feature two</li>
-        <li>Key feature three</li>
-      </ul>
-    </section>
+    <section id="robomaster">
+      <h2>RoboMaster — CQU 战队</h2>
 
-    <section id="gallery">
-      <h2>Screenshots</h2>
-      <div class="gallery">
+      <div class="project">
+        <h3>2024 赛季 · 全国二等奖</h3>
+        <p class="project-role">电控组组员 — 轮腿平衡步兵 &amp; 双头哨兵</p>
+        <ul>
+          <li>研发五连杆并联构型轮腿平衡步兵，采用 Model-Based 方法在 MATLAB/Simulink 完成完整仿真验证</li>
+          <li>主控制器使用 LQR 并联多个 PD 控制器，嵌入式部署于 MCU + FreeRTOS 平台</li>
+          <li>使用 Kalman Filter 处理实际传感器数据，实现倒地自起、跳跃等特殊功能</li>
+          <li>负责双云台双头哨兵嵌入式控制开发，对接视觉与导航算法，实现全自动机器人</li>
+        </ul>
         <figure>
-          <img src="img/placeholder.png" alt="screenshot 1" />
-          <figcaption>Description of screenshot 1</figcaption>
+          <img src="img/robomaster-2024.jpg" alt="RoboMaster 2024 wheel-legged infantry" loading="lazy" />
+          <figcaption>轮腿平衡步兵机器人（五连杆并联构型）</figcaption>
         </figure>
+      </div>
+
+      <div class="project">
+        <h3>2023 赛季 · 全国三等奖</h3>
+        <p class="project-role">电控组组长 — 英雄、工程、哨兵</p>
+        <ul>
+          <li>负责三台机器人（英雄、工程、哨兵）嵌入式控制代码，主控 STM32F407 + FreeRTOS</li>
+          <li>基于 CAN 总线与 PID 算法控制底盘和云台电机，融合 IMU、遥控器与上位机数据实现多种控制模式</li>
+          <li>完成整台机器人的全部运动控制与整机测试</li>
+        </ul>
         <figure>
-          <img src="img/placeholder.png" alt="screenshot 2" />
-          <figcaption>Description of screenshot 2</figcaption>
+          <img src="img/robomaster-2023.jpg" alt="RoboMaster 2023 hero robot" loading="lazy" />
+          <figcaption>英雄机器人（STM32F407 + FreeRTOS）</figcaption>
         </figure>
       </div>
     </section>
 
-    <section id="links">
-      <h2>Links</h2>
-      <p>
-        <a href="https://github.com/your-username/your-repo" target="_blank"
-          >GitHub Repository</a
-        >
-      </p>
+    <section id="internship">
+      <h2>Internship Experience</h2>
+
+      <div class="project">
+        <h3>vivo 移动通信 · C/C++ 嵌入式实习</h3>
+        <p class="project-role">2026.05 – 2026.10</p>
+        <ul>
+          <li>开发 TWS 耳机自动化工具链，基于 UART/串口实现自动烧录、模拟开关盖信号、蓝牙连接等底层接口</li>
+          <li>设计上层功能测试模块并接入主控代码，撰写 Agent Skill 实现闭环自动化：修改代码 → 烧录 → 测试 → 抓 Log → 迭代</li>
+        </ul>
+        <figure>
+          <img src="img/vivo-tws.jpg" alt="vivo TWS automation toolchain" loading="lazy" />
+          <figcaption>TWS 耳机嵌入式自动化工具链</figcaption>
+        </figure>
+      </div>
+
+      <div class="project">
+        <h3>赛力斯凤凰智创 · 前瞻研发部</h3>
+        <p class="project-role">2025.02 – 2025.06</p>
+        <ul>
+          <li>开发 S-R-S 构型七自由度人形机械臂 MATLAB 运动学仿真模型</li>
+          <li>实现正逆运动学算法（DH 参数法），获取关节力矩数据为结构设计提供参数支持</li>
+        </ul>
+        <figure>
+          <img src="img/seres-arm.jpg" alt="Seres 7-DOF robotic arm simulation" loading="lazy" />
+          <figcaption>S-R-S 七自由度人形机械臂仿真</figcaption>
+        </figure>
+      </div>
+
+      <div class="project">
+        <h3>大疆 RoboMaster 部门 · 裁判负责人</h3>
+        <p class="project-role">2024.03 – 2024.04</p>
+        <ul>
+          <li>统筹执行 2024 赛季 RoboMaster 高校联盟赛西南赛区全流程赛事</li>
+          <li>领导 10 人裁判团队并培训 50+ 志愿者，担任主裁判与申诉处理</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>明月湖智能科技 · 嵌入式实习</h3>
+        <p class="project-role">2023.07 – 2023.08</p>
+        <ul>
+          <li>参与盲文点显器项目，完成 4 层 PCB 设计、焊接测试、ESP32 主控软件开发</li>
+          <li>调试语音模块等外设，协助产品打样及功能测试</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Other Projects</h2>
+
+      <div class="project">
+        <h3>xv6 操作系统</h3>
+        <p class="project-role">2026.05 – 2026.07</p>
+        <ul>
+          <li>基于 RISC-V 架构 xv6 内核，实现用户态 sleep 等 Shell 指令及 sandbox 自定义系统调用</li>
+          <li>实现 Copy-on-Write 机制优化 fork() 性能，深入理解页表与虚拟地址映射</li>
+          <li>分析自旋锁与睡眠锁底层实现，理解并发控制与竞态处理</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>C/C++ / Embedded Development (STM32F4, Keil, HAL)</li>
+        <li>FreeRTOS (task scheduling, source code analysis)</li>
+        <li>Peripherals &amp; Protocols: GPIO, Timer, PWM, UART, SPI, I2C, CAN, RS485</li>
+        <li>Control: PID, LQR, Kalman Filter, MATLAB/Simulink</li>
+        <li>Linux Embedded: char device drivers, platform, device tree, Kobject</li>
+        <li>Bluetooth: BLE &amp; Classic Bluetooth</li>
+      </ul>
+    </section>
+
+    <section id="honors">
+      <h2>Honors &amp; Awards</h2>
+      <ul class="awards-list">
+        <li>RoboMaster 2024 全国赛 二等奖</li>
+        <li>RoboMaster 2024 南部赛区 一等奖</li>
+        <li>RoboMaster 2023 全国赛 三等奖</li>
+        <li>RoboMaster 2023 南部赛区 二等奖</li>
+        <li>国家级大创项目 良好</li>
+        <li>重庆大学 优秀学生 / 丙等奖学金</li>
+      </ul>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Your Name</p>
+    <p>&copy; 2026 Zhikui Zhang &middot; Built with &lt;3</p>
   </footer>
 </body>
 </html>
