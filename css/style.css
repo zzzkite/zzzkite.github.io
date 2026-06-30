@@ -48,7 +48,7 @@ section {
 h2 {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.5rem;
   border-bottom: 2px solid #ddd;
   padding-bottom: 0.4rem;
   color: #222;
@@ -57,7 +57,7 @@ h2 {
 h3 {
   font-size: 1.15rem;
   font-weight: 600;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.1rem;
   color: #222;
 }
 
@@ -134,7 +134,7 @@ a:hover {
 .project-role {
   font-size: 0.95rem;
   color: #888;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.2rem;
 }
 
 /* Images */
