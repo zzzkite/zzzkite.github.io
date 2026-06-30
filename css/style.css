@@ -139,7 +139,7 @@ a:hover {
 
 /* Images */
 .project-images {
-  flex: 0 0 42%;
+  flex: 0 0 55%;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
