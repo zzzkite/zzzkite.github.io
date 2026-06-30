@@ -151,10 +151,6 @@ a:hover {
   text-align: center;
 }
 
-.project-images.col-3 figure {
-  flex: 1 1 calc(33.33% - 0.67rem);
-}
-
 .project-images figure img {
   width: 100%;
   height: auto;
